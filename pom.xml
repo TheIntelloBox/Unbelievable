@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.nikl</groupId>
-    <artifactId>everything</artifactId>
-    <name>Everything</name>
+    <artifactId>Unbelievable</artifactId>
+    <name>Unbelievable</name>
     <packaging>jar</packaging>
     <version>0.1</version>
-    <description>Custom events fired on specific dates and times</description>
+    <description>Test Plugin</description>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
