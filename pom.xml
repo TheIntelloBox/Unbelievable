@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.nikl</groupId>
-    <artifactId>calendarevents</artifactId>
-    <name>CalendarEvents</name>
+    <groupId>com.gmail.victoriodelaviciio</groupId>
+    <artifactId>Unbelievable</artifactId>
+    <name>Unbelievable</name>
     <packaging>jar</packaging>
-    <version>1.4.1</version>
-    <description>Custom events fired on specific dates and times</description>
+    <version>0.1</version>
+    <description>Test Plugin</description>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
