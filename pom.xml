@@ -11,13 +11,6 @@
     <version>0.1</version>
     <description>Custom events fired on specific dates and times</description>
 
-    <distributionManagement>
-        <repository>
-            <id>nikl-repo</id>
-            <url>https://repo.nikl.me/artifactory/repositories</url>
-        </repository>
-    </distributionManagement>
-
     <build>
         <defaultGoal>clean package</defaultGoal>
         <finalName>${project.name}</finalName>
