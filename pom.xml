@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.nikl</groupId>
-    <artifactId>Unbelievable</artifactId>
-    <name>Unbelievable</name>
+    <artifactId>calendarevents</artifactId>
+    <name>CalendarEvents</name>
     <packaging>jar</packaging>
-    <version>0.1</version>
-    <description>Test Plugin</description>
+    <version>1.4.1</version>
+    <description>Custom events fired on specific dates and times</description>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
@@ -59,6 +59,38 @@
                 <configuration>
                     <artifactSet>
                         <includes>
+                            <include>org.bstats:*</include>
+                            <include>me.nikl.nmsutilities:*</include>
+                        </includes>
+                    </artifactSet>
+                    <relocations>
+                        <relocation>
+                            <pattern>org.bstats.bukkit</pattern>
+                            <shadedPattern>me.nikl.calendarevents.bstats</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>me.nikl.nmsutilities</pattern>
+                            <shadedPattern>me.nikl.calendarevents.nms</shadedPattern>
+                        </relocation>
+                    </relocations>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>bukkit-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+        </repository>
         <repository>
             <id>bstats-repo</id>
             <url>http://repo.bstats.org/content/repositories/releases/</url>
